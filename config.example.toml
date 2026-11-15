@@ -1,0 +1,24 @@
+[ui]
+theme = "textual-dark"
+page_size = 200
+
+[sync]
+poll_interval = 60
+initial_fetch = 200
+
+[[accounts]]
+key = "work"
+email = "me@example.com"
+display_name = "Me"
+username = "me@example.com"
+sent_copy = "append"
+
+[accounts.imap]
+host = "imap.example.com"
+port = 993
+security = "ssl"
+
+[accounts.smtp]
+host = "smtp.example.com"
+port = 465
+security = "ssl"
